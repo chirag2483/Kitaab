@@ -15,7 +15,6 @@ function Freebook() {
         const res = await axios.get("http://localhost:4001/book");
 
         const data = res.data.filter((data) => data.category === "Free");
-        console.log(data);
         setBook(data);
       } catch (error) {
         console.log(error);
@@ -64,16 +63,14 @@ function Freebook() {
         <div>
           <h1 className="font-semibold text-xl pb-2">Free Offered Courses</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Accusantium veritatis alias pariatur ad dolor repudiandae eligendi
-            corporis nulla non suscipit, iure neque earum?
+            We also provide Free Courses . Here are some , just for you !
           </p>
         </div>
 
         <div>
-          <Slider {...settings}>
+          <Slider {...settings} className="h-120">
             {book.map((item) => (
-              <Cards item={item} key={item.id} />
+              <Cards item={item} key={item._id} />
             ))}
           </Slider>
         </div>

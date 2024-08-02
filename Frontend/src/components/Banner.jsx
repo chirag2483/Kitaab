@@ -7,13 +7,11 @@ function Banner() {
         <div className="w-full order-2 md:order-1 md:w-1/2 mt-12 md:mt-36">
           <div className="space-y-8">
             <h1 className="text-2xl md:text-4xl font-bold">
-              Hello, welcomes here to learn something{" "}
+              Hello, welcome to Kitaab,<br></br> Learn Something{" "}
               <span className="text-pink-500">new everyday!!!</span>
             </h1>
             <p className="text-sm md:text-xl">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-              et totam. Tempora amet atque expedita, quae corrupti totam sed
-              pariatur corporis at veniam est voluptas animi!
+            Welcome to our bookstore, a cozy haven for book lovers of all kinds. Here, every shelf is filled with adventures, knowledge, and inspiration waiting to be discovered. Whether you're seeking a timeless classic or the latest bestseller, we have something special just for you. Happy reading!
             </p>
             <label className="input input-bordered flex items-center gap-2">
               <svg
